@@ -1,0 +1,7 @@
+Project 3 Report
+
+1) The function that detects when a player and goodie interact is through each goodie's doSomething() method. Each tick the goodie will see if the player has the same x and y coordinate as it. If it does, it uses its StudentWorld member variable to awardPoints(), playSound(), and add the effect (lives, ammo, health). Then it uses its own setAlive() function to set its state to dead and be removed at the end of the tick through StudentWorld's move().
+
+2) As far as I know, there are no known bugs in my classes, and all functionality should be implemented.
+
+3) In the sample game, marbles cannot be pushed into where the exit is located, revealed or unrevealed, and this was unspecified in the spec. So my program also includes not pushing the marble into the exit location. I also referred to the sample game in the situation where robots could hit each other if the player stood between them but moved out of reach.
